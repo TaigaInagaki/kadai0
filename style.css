@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+/*!
+ * ress.css • v3.0.1
+ * MIT License
+ * github.com/filipelinhares/ress
+ */html{box-sizing:border-box;-webkit-text-size-adjust:100%;word-break:normal;-moz-tab-size:4;tab-size:4}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[disabled]{cursor:default}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer;color:inherit}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,input,select,textarea{background-color:transparent;border-style:none}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{-webkit-appearance:button;color:inherit;font:inherit}img{border-style:none}progress{vertical-align:baseline}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin: 0 0 0 auto;
+}
+
+.header-ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-li {
+  margin: 0 50px 0 0;
+  padding: 50px 0;
+  font-size: 21px;
+}
+
+.header-li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.header-li a:hover {
+  text-decoration: none;
+  color: #000066;
+}
+
+/* main-visual */
+.main-visual {
+  position: relative;
+}
+
+.main-visual img:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-visual h1{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.main-visual p {
+  font-size: 25px;
+  color: white;
+}
+
+/* about */
+.about-text h2 {
+  font-size: 24px;
+  color: #ffd61a;
+  margin: 60px 0 30px 0;
+}
+
+.about-text h3 {
+  font-size: 18px;
+  margin-bottom: 60px;
+  color: #222222;
+  font-weight: lighter;
+}
+
+.about-text {
+  font-size: 16px;
+}
+
+.about-top {
+  margin: 40px 0;
+}
+
+.about-middle {
+  margin-bottom: 40px;
+}
+
+.about-bottom {
+  margin-bottom: 80px;
+}
+
+.about-img {
+  display: flex;
+}
+
+/* course */
+.course-text {
+  margin-bottom: 60px;
+}
+
+.course-text h2 {
+  font-size: 24px;
+  color: #222222;
+  margin: 60px 0 30px 0;
+}
+
+.course-top  h3 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: lighter;
+}
+
+.course-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+}
+
+.course-detail-one {
+  width: 480px;
+  margin-right: auto;
+  vertical-align: middle;
+  padding-left: 50px;
+}
+
+.course-detail-two {
+  width: 480px;
+  margin-left: auto;
+  vertical-align: middle;
+  padding-right: 50px;
+}
+
+.course-image h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* 【質問】本文の切り返しが揃わない */
+.course-explain {
+  font-size: 16px;
+  text-align: left;
+}
+
+/* news */
+.news-text h2 {
+  font-size: 24px;
+  color: #ffd61a;
+  margin: 60px 0 30px 0;
+}
+
+.news-text h3 {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.news-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.news-content {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.content-date {
+  margin: 30px 0 24px 0;
+}
+
+.btn {
+  width: 300px;
+  height: 60px;
+  margin-bottom: 60px;
+  background-color: #ffd61a;
+  color: white;
+  border-color: #ffd61a;
+}
+
+.btn:hover {
+  background-color:#FFCC33;
+}
+
+.news-btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* access */
+.access {
+  background-color: #fafafa;
+}
+
+.access-text h2 {
+  padding-top: 60px;
+  font-size: 24px;
+}
+
+.access-text h3 {
+  font-weight: normal;
+  margin: 30px 0 60px 0;
+  font-size: 18px;
+}
+
+.access-map {
+  margin-bottom: 60px;
+}
+
+.access-wrapper {
+  padding-bottom: 60px;
+}
+
+.access-inner {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.access-title {
+  width: 200px;
+  padding: 15px 0;
+}
+
+.access-item {
+  width: 400px;
+  padding: 15px 0;
+}
+
+/* contact */
+.contact-text h2 {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.contact-text h3 {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.contact-text p {
+  font-size: 16px;
+}
+
+.contact-top {
+  margin: 60px 0 30px 0;
+}
+
+.contact-middle {
+  margin-bottom: 70px;
+}
+
+
+/* contact-form */
+.form-inner {
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* 【質問】titleが上下中央に寄らないのはなぜ？ */
+.form-title {
+  width: 240px;
+  padding: 0 64px 0 16px;
+  border-bottom: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+  
+}
+
+.form-title:nth-child(9),.form-title:nth-child(11) {
+  padding-top: 15px;
+}
+
+.form-title-top {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.form-border-top {
+  border-top: 2px solid #bfbfbf;
+}
+
+.form-title-middle {
+  height: 150px;
+}
+
+.form-title-bottom {
+  height: 100px;
+}
+
+.form-item {
+  width: 400px;
+  padding-left: 8px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.text-box {
+  width: 328px;
+  height: 36px;
+  border: 1px solid #bfbfbf;
+}
+
+.reasons {
+  width: 328px;
+  height: 36px;
+  border: 1px solid #bfbfbf;
+}
+
+.check {
+  display:block;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: auto;
+  margin: 10px 0;
+}
+
+.form-textarea {
+  height: 100px;
+}
+
+.form-textarea-box {
+  resize: none;
+  width: 328px;
+  height: 84px;
+  border: 1px solid #bfbfbf;
+  margin: 8px 0;
+}
+
+
+.contact-btn {
+  text-align: center;
+  margin: 30px 0 140px 0;
+}
+
+/* footer */
+.footer {
+  max-width: 1336px;
+  background-color: #707070;
+  padding: 30px 0;
+  color: white;
+}
+
+@media screen and (max-width:640px) {
+
+  /* main-visual */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
